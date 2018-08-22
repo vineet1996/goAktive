@@ -12,7 +12,7 @@ steps to execute
    >> (venv) $
 
 4.Then run the flask 
-   >> $flask run
+   >> (venv)$flask run
 
 5.Open browser with 
     localhost:5000 
