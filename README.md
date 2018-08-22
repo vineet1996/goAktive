@@ -7,12 +7,12 @@ steps to execute
 2.Open terminal and move to the directory where you have cloned these files
 
 3.Activate venv by executing following command 
-    $ source venv/bin/activate 
+   >> $ source venv/bin/activate 
   when it is executed, it some how look like 
-    (venv) $
+   >> (venv) $
 
 4.Then run the flask 
-    $flask run
+   >> $flask run
 
 5.Open browser with 
     localhost:5000 
