@@ -30,8 +30,8 @@ after you install mysql
       >>create database proj;
       >>use proj;
 
-2. create table 
-      create table links (id int not null auto_increment, url varchar(100),  primary key(id));
+2. create table:
+      >>create table links (id int not null auto_increment, url varchar(100),  primary key(id));
 
-3.insert values
-      insert into links (url) values ("image"),("qwert"),("zxcv"),("asdf"),("1234");
+3.insert values:
+      >>insert into links (url) values ("image"),("qwert"),("zxcv"),("asdf"),("1234");
