@@ -13,6 +13,7 @@ steps to execute
 
 4.Install flask then run it
    >> pip3 install flask
+   
    >> (venv)$flask run
 
 5.Open browser with 
