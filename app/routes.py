@@ -27,9 +27,9 @@ def add(arg2):
         op1.append(i.url)
 
     if arg2 in op1:
-        return jsonify({'value':'url already present in database','success':False})
+        return jsonify({'value':arg2+' already present in database','success':False})
     else:
         me =  links(url=arg2)
         db.session.add(me)
         db.session.commit()
-        return jsonify({'value':'url added to database','success':True})
+        return jsonify({'value':arg2+' added to database','success':True})
