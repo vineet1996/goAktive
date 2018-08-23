@@ -24,12 +24,12 @@ steps to execute
  It returns true if url is safe
             {
              "success": true, 
-             "value": "<url>"
+             "value": "url"
             }
  It returns false if url is malware url
             {
                "success": false, 
-               "value": "<url>"
+               "value": "url"
             }
   
  Endpoint to add malware url to database
@@ -38,12 +38,12 @@ steps to execute
  It returns true and url is added to database
             {
              "success": true, 
-             "value": "<url> added to database"
+             "value": "url added to database"
             }
  It returns false if url already present in database
             {
                "success": false, 
-               "value": "<url> already present in database"
+               "value": "url already present in database"
             }
 
 One thing i used mysql so i have local database .You should install mysql
