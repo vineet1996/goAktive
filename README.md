@@ -22,31 +22,31 @@ steps to execute
 
     localhost:5000/urlinfo/1/<url>
  It returns true if url is safe
+ 
             {
-            
              "success": true, 
              "value": "url"
-             
             }
             
  It returns false if url is malware url
             
             {
-            
                "success": false, 
                "value": "url"
-            
             }
   
  Endpoint to add malware url to database
       
       localhost:5000/add/<url>
  It returns true and url is added to database
+            
             {
              "success": true, 
              "value": "url added to database"
             }
+            
  It returns false if url already present in database
+            
             {
                "success": false, 
                "value": "url already present in database"
