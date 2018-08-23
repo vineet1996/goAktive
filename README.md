@@ -8,7 +8,9 @@ steps to execute
 
 3.Activate venv by executing following command 
    >> $ source venv/bin/activate 
+   
   when it is executed, it some how look like 
+   
    >> (venv) $
 
 4.Install flask then run it
