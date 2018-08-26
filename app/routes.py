@@ -1,5 +1,6 @@
 from flask import render_template,redirect
-from app import app,db,links
+from app import app,db
+from app.models import links
 from flask import Flask,request, url_for,jsonify
 
 
