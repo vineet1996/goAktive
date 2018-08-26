@@ -18,7 +18,7 @@ steps to execute
    
    >> (venv)$flask run
 
-5.Open browser with 
+5.Open browser 
 
    Endpoint to add malware url to database
    (Note: add some urls to the database )
