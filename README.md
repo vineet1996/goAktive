@@ -21,6 +21,7 @@ steps to execute
 5.Open browser with 
 
    Endpoint to add malware url to database
+   (Note: add some urls to the database )
       
       localhost:5000/add/<url>
  It returns true and url is added to database
