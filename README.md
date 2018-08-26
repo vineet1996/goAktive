@@ -20,22 +20,7 @@ steps to execute
 
 5.Open browser with 
 
-    localhost:5000/urlinfo/1/<url>
- It returns true if url is safe
- 
-            {
-             "success": true, 
-             "value": "url"
-            }
-            
- It returns false if url is malware url
-            
-            {
-               "success": false, 
-               "value": "url"
-            }
-  
- Endpoint to add malware url to database
+   Endpoint to add malware url to database
       
       localhost:5000/add/<url>
  It returns true and url is added to database
@@ -51,20 +36,23 @@ steps to execute
                "success": false, 
                "value": "url already present in database"
             }
+           
+  Endpoint to check the url is safe or not
 
-One thing i used mysql so i have local database .You should install mysql
+    localhost:5000/urlinfo/1/<url>
+ It returns true if url is safe
+ 
+            {
+             "success": true, 
+             "value": "url"
+            }
+            
+ It returns false if url is malware url
+            
+            {
+               "success": false, 
+               "value": "url"
+            }
+  
+ 
 
-after you install mysql
-* if you keep root password as "123" it would be better.
-* if mysql is already installed 
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/proj'
-  In __init__.py file just need to change the username and password as per the database. 
-1. create database and use it
-      >>create database proj;
-      >>use proj;
-
-2. create table:
-      >>create table links (id int not null auto_increment, url varchar(100),  primary key(id));
-
-3.insert values:
-      >>insert into links (url) values ("image"),("qwert"),("zxcv"),("asdf"),("1234");
